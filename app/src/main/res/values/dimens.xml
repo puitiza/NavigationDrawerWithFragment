@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_drawer_header_margin">36dp</dimen>
+    <dimen name="status_bar_kitkat_height">0dp</dimen>
+    <dimen name="status_bar_lollipop_height">0dp</dimen>
+    <dimen name="status_bar_margin_top">0dp</dimen>
+</resources>

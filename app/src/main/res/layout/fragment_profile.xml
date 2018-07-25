@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Profile Fragment"
+        android:text="@string/Profile_Fragment"
         android:textSize="30sp" />
 
 </RelativeLayout>

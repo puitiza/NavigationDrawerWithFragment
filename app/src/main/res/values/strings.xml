@@ -2,4 +2,7 @@
     <string name="app_name">NavigationDrawerWithFragment</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Chat_Fragment">Chat fragment</string>
+    <string name="Message_Fragment">Message Fragment</string>
+    <string name="Profile_Fragment">Profile Fragment</string>
 </resources>
