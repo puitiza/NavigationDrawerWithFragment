@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- statusBarColor es justo para la version lolipop para que en la parte superior no se muestre
+        el color por defecto que es negro sino un color transparente-->
+    </style>
+</resources>
