@@ -1,5 +1,5 @@
 # NavigationDrawerWithFragment  
-Este proyecto es creado para manejar de una forma muy eficiene listView expandible en unNavigation Drawer:  
+Este proyecto es creado para manejar de una forma muy eficiene  un Navigation Drawer:  
 
 1. Library necesarias de design  
 >  implementation 'com.android.support:design:27.1.1'  
