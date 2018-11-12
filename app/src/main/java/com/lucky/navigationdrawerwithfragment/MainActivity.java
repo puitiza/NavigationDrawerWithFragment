@@ -1,23 +1,28 @@
 package com.lucky.navigationdrawerwithfragment;
 
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lucky.navigationdrawerwithfragment.fragments.ChatFragment;
 import com.lucky.navigationdrawerwithfragment.fragments.MessageFragment;
 import com.lucky.navigationdrawerwithfragment.fragments.ProfileFragment;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import java.util.Objects;
 
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    Toolbar toolbar;
     private DrawerLayout drawer;
 
     @Override
@@ -25,8 +30,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 // -------------------------Se setea el toolbar------------------------------------------------------------
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        showToolbar(getResources().getString(R.string.Drawer));
+        /*Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
 // -------------------------------------------------------------------------------------------------------
 // -----------Esto es para implementar los metodos cuando se selecciona un item----------------------------
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -42,6 +48,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MessageFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_message);
         }
+    }
+
+    public void showToolbar(String tittle) {
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
+        TextView subtitle_toolbar = toolbar.findViewById(R.id.subtitle_toolbar);
+        subtitle_toolbar.setText(tittle);
     }
 
     /**
