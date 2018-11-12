@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 // -------------------------Se setea el toolbar------------------------------------------------------------
         showToolbar(getResources().getString(R.string.Drawer));
-        /*Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);*/
 // -------------------------------------------------------------------------------------------------------
 // -----------Esto es para implementar los metodos cuando se selecciona un item----------------------------
         NavigationView navigationView = findViewById(R.id.nav_view);
